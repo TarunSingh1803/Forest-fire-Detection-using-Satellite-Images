@@ -40,5 +40,5 @@ The app allows users to:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/Forest-fire-Detection-using-Satellite-Images.git
+git clone https://github.com/TarunSingh1803/Forest-fire-Detection-using-Satellite-Images.git
 cd Forest-fire-Detection-using-Satellite-Images
