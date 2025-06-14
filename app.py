@@ -1,6 +1,8 @@
+
+
 import streamlit as st
 import numpy as np
-from tensorflow.keras.models import  load_model
+from tensorflow.keras.models import load_model
 from PIL import Image, ImageOps
 
 # Set up app config
@@ -12,7 +14,7 @@ st.write("Upload a satellite image to detect presence of Fire or Not Fire")
 # Load model (cache it)
 @st.cache_resource
 def load_fire_model():
-    model = load_model("wildfire_detection_model python -m pip install --upgrade pip.h5")
+    model = load_model("fire_detection_model.h5")
     return model
 
 model = load_fire_model()
@@ -45,9 +47,9 @@ if uploaded_file is not None:
                 confidence_display = "< 0.01%"
             else:
                 confidence_display = f"{confidence:.2f}%"
-                st.info(f"Confidence: *{confidence_display}*")
+                st.info(f"Confidence: **{confidence_display}**")
 
 
             st.subheader("Result:")
-            st.success(f"Prediction: *{class_names[predicted_class]}*")
-            st.info(f"Confidence: *{confidence}%*")
+            st.success(f"Prediction: **{class_names[predicted_class]}**")
+            st.info(f"Confidence: **{confidence}%**")
