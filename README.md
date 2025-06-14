@@ -28,7 +28,7 @@ The model is a Keras-based Convolutional Neural Network (CNN) trained on resized
 ## 📱 App Interface (Streamlit)
 
 The app allows users to:
-1. Upload `.jpg`, `.png`, or `.jpeg` satellite images.
+1. Upload `.jpg` satellite images.
 2. View the uploaded image.
 3. Click a button to run the fire detection model.
 4. See the prediction result and model confidence.
